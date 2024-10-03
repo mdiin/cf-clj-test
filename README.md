@@ -4,6 +4,19 @@ This repo is an example of a minimal Clojure app that packaged is packaged as an
 
 Since obtaining access to a CloudFoundry instance might not be easy, this README contains the resulting stacktrace as well as the run output from CloudFoundry.
 
+## Building the uberjar
+
+Using tools.build: `clojure -T:build uberjar`
+
+## Deploying to CloudFoundry
+
+Using the CloudFoundry CLI:
+
+```
+echo "Push the uberjar"
+cf push clj-test -b https://github.com/cloudfoundry/java-buildpack.git -p target/test-1-standalone.jar
+```
+
 ## Output of running the app
 
 This is the summary output from requesting a CloudFoundry run (see [Stacktrace](#stacktrace) below for error details):
