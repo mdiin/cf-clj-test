@@ -1,6 +1,6 @@
 # CloudFoundry Clojure Test
 
-This repo is an example of a minimal Clojure app that packaged is packaged as an uberjar using tools.build. It runs to completion when executed locally using `java -jar`, but crashes when run on CloudFoundry.
+This repo is an example of a minimal Clojure app that is packaged as an uberjar using tools.build. It runs to completion when executed locally using `java -jar`, but crashes when run on CloudFoundry.
 
 Since obtaining access to a CloudFoundry instance might not be easy, this README contains the resulting stacktrace as well as the run output from CloudFoundry.
 
